@@ -7,7 +7,7 @@ Our neural network model involves several hyperparameters, including the number 
 
 # Setup
 
-##Basic information of equipment and software
+## Basic information of equipment and software
 The database we use: 
 Contact angle of polymer database:
  https://www.accudynetest.com/polytable_03.html?sortby=contact_angle
