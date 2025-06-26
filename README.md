@@ -8,11 +8,13 @@ Our neural network model involves several hyperparameters, including the number 
 # Setup
 
 ## Basic information of equipment and software
-The database we use: 
-Contact angle of polymer database:
- https://www.accudynetest.com/polytable_03.html?sortby=contact_angle
-The software we use: 
+Contact angle of polymer database: https://www.accudynetest.com/polytable_03.html?sortby=contact_angle
+
 Python version: Python 3.11.8 (tags/v3.11.8:db85d51, Feb 6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)] on win32
+
 CPU: AMD Ryzen 7 500H with Radeon Graphics
+
 GPU: NVIDIA GeForce RTX 3060 Laptop GPU
+
 PyCharm version: PyCharm 2024.1.1 (Community Edition)
+
