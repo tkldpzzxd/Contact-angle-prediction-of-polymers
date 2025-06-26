@@ -30,4 +30,5 @@ pred_contact_angle = pred_contact_angle.detach().numpy() print("CS", pred_contac
 
 
 When making the prediction of contact angle, the feature of the predicted polymer needs to be input. The input order of the feature should be consistent with the format order in the "Contact_angle_database.csv" file, which is "Surface Energy (dynes/cm)", "C-H bond", "CH3", "CH2", "CH", "C-C double bond (Mole Fraction)", "Hydroxy", "ketone group", "ether bond", "sulfide", "benzene ring", "Sulfone", "ester group", "nitrile grouping", "F", "Cl", "Si", "amido bond".
-The input feature can be either an integer or a floating-point number. For example, the feature for predicting chitosan would be "[41.1, 0.227272727, 0, 0.045454545, 0.227272727, 0, 0.090909091, 0, 0.090909091, 0, 0, 0, 0, 0, 0, 0, 0, 0.045454545]".Simply input "feature" into the above code and run the code to obtain the predicted contact angle
+
+The input feature can be either an integer or a floating-point number. For example, the feature for predicting chitosan would be "[41.1, 0.227272727, 0, 0.045454545, 0.227272727, 0, 0.090909091, 0, 0.090909091, 0, 0, 0, 0, 0, 0, 0, 0, 0.045454545]". Input "feature" into the above code and place it at the end of the code in the "Contact angle prediction.py" file. Then run it to obtain the prediction of the contact angle.
