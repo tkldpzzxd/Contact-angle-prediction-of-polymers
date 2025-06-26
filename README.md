@@ -1,2 +1,2 @@
 # Contact-angle-prediction-of-polymers
-## data
+We adopted the classical fully connected network (FFN) architecture commonly used in the Boston housing price prediction task, owing to its reliability and proven effectiveness in regression problems. We trained a neural network regression model using this dataset to predict contact angles, thereby enabling the machine-learning-assisted selection of hydrophilic materials.
