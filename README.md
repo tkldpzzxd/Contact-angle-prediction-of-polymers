@@ -25,8 +25,10 @@ PyCharm version: PyCharm 2024.1.1 (Community Edition)
 
 An example of predicting the contact angle:
 
-`#Chitosan prediction
-pred_contact_angle = model(torch.tensor([41.1,0.227272727,0,0.045454545,0.227272727,0,0.090909091,0,0.090909091,0,0,0,0,0,0,0,0,0.045454545], dtype=torch.float))
+`pred_contact_angle = model(torch.tensor([41.1,0.227272727,0,0.045454545,0.227272727,0,0.090909091,0,0.090909091,0,0,0,0,0,0,0,0,0.045454545], dtype=torch.float))]
+
 pred_contact_angle = pred_contact_angle.reshape(len(pred_contact_angle))
+
 pred_contact_angle = pred_contact_angle.detach().numpy()
+
 print("CS", pred_contact_angle)` 
