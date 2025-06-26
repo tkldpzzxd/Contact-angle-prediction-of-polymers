@@ -3,7 +3,7 @@ We adopted the classical fully connected network (FFN) architecture commonly use
 
 We estimated functional group density as the ratio of the number of functional groups to the total number of atoms in a monomer unit. This metric provides an approximate measure of the availability of polar groups per atom in the polymer chain. For example, in polyvinyl alcohol (PVA), the density of hydroxyl groups is approximately 1/7 ≈ 0.143. These descriptors—surface energy of functional groups and the density of various functional groups—were encoded as features in a multivariate input matrix. The contact angle was used as the regression label.
 
-Our neural network model involves several hyperparameters, including the number of iterations, learning rate, number of nodes, activation function, loss function, and optimizer. These parameters are tuned based on the root mean squared error (RMSE) results on the train and validation sets. The following section outlines the procedure we employed to optimize the model hyperparameters in order to achieve the best predictive performance.
+Our neural network model involves several hyperparameters, including the number of iterations, learning rate, number of nodes, activation function, loss function, and optimizer. These parameters are tuned based on the root mean squared error (RMSE) results on the train and validation sets. 
 
 # Setup
 
