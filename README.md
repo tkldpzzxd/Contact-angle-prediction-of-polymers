@@ -19,7 +19,7 @@ GPU: NVIDIA GeForce RTX 3060 Laptop GPU
 PyCharm version: PyCharm 2024.1.1 (Community Edition)
 
 ## install as a pip package:
-'pip install pandas'
+`pip install pandas`
 'pip install numpy'
 'pip install sklearn'
 'pip install torch'
