@@ -22,19 +22,19 @@ PyCharm version: PyCharm 2024.1.1 (Community Edition)
 `pip install pandas` `pip install numpy` `pip install sklearn` `pip install torch` `pip install tqdm` `pip install matplotlib`
 
 # Parameter optimization of the model
-By adjusting several hyperparameters of the neural network model, including the number of iterations, learning rate, number of nodes, activation function, loss function and optimizer, we obtained the optimized model. The process and results of the optimization are presented in the "Supporting Information" and "Optimization results of parameters" folders. Additionally, readers can view the training results of the model by adjusting "Contact angle prediction.py".
+By adjusting several hyperparameters of the neural network model, including the number of iterations, learning rate, number of nodes, activation function, loss function and optimizer, we obtained the optimized model. The process and results of the optimization are presented in the "Supporting Information" and "Optimization results of parameters" folders. Additionally, readers can view the training results of the model by adjusting "Contact_angle_prediction.py".
 
 # Usage & Examples
 
 An example of predicting the contact angle:
 
-<pre>```python
+```python
 pred_contact_angle = model(torch.tensor( [41.1, 0.227272727, 0, 0.045454545, 0.227272727, 0, 0.090909091, 0, 0.090909091, 0, 0, 0, 0, 0, 0, 0, 0, 0.045454545], dtype=torch.float)) 
 pred_contact_angle = pred_contact_angle.reshape(len(pred_contact_angle)) 
 pred_contact_angle = pred_contact_angle.detach().numpy()
-print("CS", pred_contact_angle) ```</pre>
+print("CS", pred_contact_angle) ```
 
 When making the prediction of contact angle, the feature of the predicted polymer needs to be input. The input order of the feature should be consistent with the format order in the "Contact_angle_database.csv" file, which is "Surface Energy (dynes/cm)", "C-H bond", "CH3", "CH2", "CH", "C-C double bond (Mole Fraction)", "Hydroxy", "ketone group", "ether bond", "sulfide", "benzene ring", "Sulfone", "ester group", "nitrile grouping", "F", "Cl", "Si", "amido bond".
 
-The input feature can be either an integer or a floating-point number. For example, the feature for predicting chitosan would be "[41.1, 0.227272727, 0, 0.045454545, 0.227272727, 0, 0.090909091, 0, 0.090909091, 0, 0, 0, 0, 0, 0, 0, 0, 0.045454545]". Input "feature" into the above code and place it at the end of the code in the "Contact angle prediction.py" file. The predicted contact angle can be obtained by running the program using a compiler or command line.Take the command line as an example:
-`python Contact angle prediction.py`
+The input feature can be either an integer or a floating-point number. For example, the feature for predicting chitosan would be "[41.1, 0.227272727, 0, 0.045454545, 0.227272727, 0, 0.090909091, 0, 0.090909091, 0, 0, 0, 0, 0, 0, 0, 0, 0.045454545]". Input "feature" into the above code and place it at the end of the code in the "Contact_angle_prediction.py" file. The predicted contact angle can be obtained by running the program using a compiler or command line.Take the command line as an example:
+`python Contact_angle_prediction.py`
