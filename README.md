@@ -18,10 +18,13 @@ GPU: NVIDIA GeForce RTX 3060 Laptop GPU
 
 PyCharm version: PyCharm 2024.1.1 (Community Edition)
 
-## install as a pip package:
+## Install as a pip package:
 `pip install pandas` `pip install numpy` `pip install sklearn` `pip install torch` `pip install tqdm` `pip install matplotlib`
 
-## Usage & Examples
+# Parameter optimization of the model
+By adjusting several hyperparameters of the neural network model, including the number of iterations, learning rate, number of nodes, activation function, loss function and optimizer, we obtained the optimized model. The process and results of the optimization are presented in the "Supporting Information" and "Optimization results of parameters" folders. Additionally, readers can view the training results of the model by adjusting "Contact angle prediction.py".
+
+# Usage & Examples
 
 An example of predicting the contact angle:
 
