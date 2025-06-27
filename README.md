@@ -32,7 +32,8 @@ An example of predicting the contact angle:
 pred_contact_angle = model(torch.tensor( [41.1, 0.227272727, 0, 0.045454545, 0.227272727, 0, 0.090909091, 0, 0.090909091, 0, 0, 0, 0, 0, 0, 0, 0, 0.045454545], dtype=torch.float)) 
 pred_contact_angle = pred_contact_angle.reshape(len(pred_contact_angle)) 
 pred_contact_angle = pred_contact_angle.detach().numpy()
-print("CS", pred_contact_angle) ```
+print("CS", pred_contact_angle)
+```
 
 When making the prediction of contact angle, the feature of the predicted polymer needs to be input. The input order of the feature should be consistent with the format order in the "Contact_angle_database.csv" file, which is "Surface Energy (dynes/cm)", "C-H bond", "CH3", "CH2", "CH", "C-C double bond (Mole Fraction)", "Hydroxy", "ketone group", "ether bond", "sulfide", "benzene ring", "Sulfone", "ester group", "nitrile grouping", "F", "Cl", "Si", "amido bond".
 
